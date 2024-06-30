@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ! icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- ! navigation style link -->
+  <link rel="stylesheet" href="../home/navigation_style.css" />
+  <!-- ! footer style link -->
+  <link rel="stylesheet" href="../footer_components/footer.css" />
+  <!-- ! About us style link -->
+  <link rel="stylesheet" href="./about_us.css">
+  <title>About us</title>
+</head>
+
+<body>
+  <!-- ! start navigation -->
+    <nav class="nav">
+      <div id="logoDiv"><span id="logoSpn">Exclusive</span></div>
+      <div>
+        <ul id="navList">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ContactPage/contact_page.html">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input
+          type="search"
+          name="searchInput"
+          id="searchInput"
+          placeholder="What are you looking for ?"
+        />
+        <i class="fa-solid fa-magnifying-glass" onclick="startSearch()"></i>
+      </div>
+      <a href="../favorite_page/favorite_page.html" class="favorite">
+        <i class="fa-regular fa-heart"></i>
+        <span class="counter" id="favoriteCountSpan"></span>
+      </a>
+      <a href="../cart/cart_page.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="counter" id="cartCountSpan"></span>
+      </a>
+    </nav>
+    <!-- ! end navigation -->
+
+  <!-- Shop roadmap -->
+  <section class="shop-roadmap">
+    <div class="Text-roadmap">
+      <p>Home <span>></span> About us</p>
+    </div>
+    <h2 style="padding: 30px 0 20px 10px;"> About Us</h2>
+  </section>
+
+  <!-- About us main section -->
+  <section class="about-section">
+    <div class="about-info">
+      <h2 style="padding: 10px;">Our Story</h2>
+      <p style="padding: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi sapiente.
+      Quas, fugit nam laudantium labore asperiores sequi incidunt corrupti magnam consequatur
+       expedita ratione nobis molestiae nulla deserunt earum dolores?
+    </p>
+    </div>
+    <div >
+      <img src="../assets/images/about_us.jpeg" alt="">
+    </div>
+  </section>
+
+  <!-- Our Team Section -->
+  <section class="ourTeam-section">
+    <h2 style="margin: 50px; text-align:center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./avatar1.jpg" style="width:100%">
+          <div class="container">
+            <h2>Mohamed Ayman</h2>
+            <p class="title">Software Developer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="./avatar1.jpg" style="width:100%">
+          <div class="container">
+            <h2>Mahmoud Abdelraheem</h2>
+            <p class="title">Software Developer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./avatar1.jpg" style="width:100%">
+          <div class="container">
+            <h2>Aliaa Hassan</h2>
+            <p class="title">Software Developer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./avatar1.jpg" style="width:100%">
+          <div class="container">
+            <h2>Mofdy Elia</h2>
+            <p class="title">Software Developer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="exlusive">
+        <h3 class="list-header">Exlusive</h3>
+        <h5>subscribe</h5>
+        <label for="email">Get 10% off on first order</label>
+        <div class="email-container">
+          <input type="email" placeholder="Enter email" class="email-input" />
+          <button class="submit-button">&#x27A4;</button>
+        </div>
+      </div>
+      <div class="support">
+        <h3 class="list-header">support</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <p>eqypt, qena, ITI building, lab 9</p>
+            </a>
+          </li>
+          <li><a href="#">team01@gmail.com</a></li>
+          <li><a href="#">+20-123-456-789</a></li>
+        </ul>
+      </div>
+
+      <div class="account">
+        <h3 class="list-header">account</h3>
+        <ul>
+          <li><a href="#">my account</a></li>
+          <li><a href="#">login / register</a></li>
+          <li><a href="#">cart</a></li>
+          <li><a href="#">favourites </a></li>
+          <li><a href="#">shop</a></li>
+        </ul>
+      </div>
+      <div class="quik-link">
+        <h3 class="list-header">quik link</h3>
+        <ul>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">terms of use</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">content</a></li>
+        </ul>
+      </div>
+      <div class="download-app">
+        <h3 class="list-header">download app</h3>
+        <p>Save 3$ with app new user only</p>
+        <img src="../footer_components/images/qrcode.png" alt="qr-code" />
+      </div>
+    </div>
+    <div class="copy-right">
+      <p>copyright &copy; 2020 all rights reserved</p>
+    </div>
+  </footer>
+
+
+  <script src="../functions.js"></script>
+  <script src="../search/search.js"></script>
+  <script src="../home/navigation_bar.js"></script>
+</body>
+
+</html>

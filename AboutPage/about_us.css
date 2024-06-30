@@ -1,0 +1,93 @@
+
+@font-face {
+  font-family: "Nunito";
+  src: url('../assets/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+
+}
+.about-section {
+    display: flex;
+    text-align: center;
+    color: black;
+}
+.shop-roadmap{
+    padding: 20px 20px 0px 130px;
+    cursor: pointer;
+}
+.Text-roadmap{
+    opacity: .5;
+}
+.Text-roadmap:hover{
+    opacity: 1;
+}
+.about-info{
+    padding: 20px;
+}
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+/* .container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .shop-roadmap{
+        display: block;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .about-section {
+        display: block;
+        padding: 50px;
+        text-align: center;
+        color: black;
+    }
+    .column {
+        width: 100%;
+        display: block;
+    }
+}

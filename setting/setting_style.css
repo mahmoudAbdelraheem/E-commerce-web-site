@@ -1,0 +1,100 @@
+
+@font-face {
+  font-family: "Nunito";
+  src: url('../assets/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+
+}
+
+.setting-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 100px auto;
+  padding: 60px;    
+  border-radius: 12px;
+  box-shadow: 5px 5px 8px 5px #ccc;
+}
+
+.setting-page .setting-form{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+.setting-page .setting-form label{  
+  width: 100%;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.setting-page .setting-form input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#show-password {
+  color: #818181;
+  cursor: pointer;
+}
+.checked {
+  color: #c9302c;
+} 
+
+.setting-form p {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+
+.setting-page .btn{
+  display: flex;
+  justify-content: space-around;  
+  width: 100%;
+}
+
+
+.setting-page button{
+    display: block;
+  padding: 10px ;
+  margin-top: 20px;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ .btn .update-data{
+  width: 65%;
+}
+
+.btn .log-out{
+  width: 25%;
+  background-color: black;
+  font-size: 16px;
+  color: white;
+}
+
+
+

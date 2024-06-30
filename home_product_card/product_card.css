@@ -1,0 +1,147 @@
+:root {
+  --img-packground-color: rgb(230, 227, 227);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ? card-container to hold all cards */
+.card-container {
+  width: 100%;
+  margin-bottom: 100px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+/* ? card style wtih width 20% from the card-container  */
+.card-container .product-card {
+  width: 23%;
+  height: 450px;
+  margin: 15px 10px;
+  background-color: var(--img-packground-color);
+  border: 1px solid var(--img-packground-color);
+  border-radius: 10px;
+  box-shadow: 2px 10px 20px 0 var(--img-packground-color);
+}
+
+/* ? image style */
+.card-container .product-card .image {
+  width: 100%;
+  height: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+.card-container .product-card .image img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+.card-container .product-card .image img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ? content style name , price , rate , add to cart , add to favourite */
+.card-container .product-card .content {
+  width: 100%;
+  height: 35%;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  background-color: white;
+}
+
+.card-container .product-card .content .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-container .product-card .content .price {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* ? price  style (new price , old price) */
+.card-container .product-card .content .price .new-price {
+  color: rgb(219, 63, 63);
+  font-weight: 700;
+  font-size: 16px;
+}
+.card-container .product-card .content .price .old-price {
+  padding: 5px;
+  border-radius: 8px;
+  background-color:  rgb(219, 63, 63);
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* ? rate style icon and text  */
+.card-container .product-card .content .rating {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  font-size: 1rem; /* Adjust size as needed */
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.card-container .product-card .content .rating i {
+  font-size: 14px;
+}
+
+
+.card-container .product-card .content .checked {
+  color: orange;
+}
+
+.card-container .product-card .content .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-container .product-card .content .add-to-cart {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(219, 63, 63);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-container .product-card .content .add-to-cart:hover {
+  background-color: rgb(255, 0, 0);
+}
+.card-container .product-card .content .btn .add-to-favoriate {
+  width: 15%;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card-container .product-card .content .btn .add-to-favoriate:hover {
+  color: rgb(255, 0, 0);
+  font-size: 28px;
+}

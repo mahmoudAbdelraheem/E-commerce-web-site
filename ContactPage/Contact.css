@@ -1,0 +1,107 @@
+
+@font-face {
+  font-family: "Nunito";
+  src: url('../assets/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+
+}
+
+.about-section {
+    display: flex;
+    text-align: center;
+    color: black;
+    
+}
+
+.shop-roadmap {
+    padding: 20px 20px 0px 130px;
+    cursor: pointer;
+}
+
+.Text-roadmap {
+    opacity: .5;
+}
+
+.Text-roadmap:hover {
+    opacity: 1;
+}
+
+.about-info {
+    padding: 20px;
+}
+
+.contact-container {
+    display: flex;
+    margin: 20px;
+    padding: 20px 20px 0px 130px;
+    text-align: center;
+}
+
+.contact-info {
+    width: 40%;
+    text-align: justify;
+
+}
+
+.contact-us {
+    width: 60%;
+}
+
+/* Form style */
+input[type=text],
+input[type=email]
+ {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: both;
+}
+textarea{
+    width: 91%;
+    resize: none;
+}
+input[type=submit] {
+
+    background: #DB4444;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #9c2f2f;
+}
+@media screen and (max-width: 650px) {
+    .shop-roadmap{
+        display: block;
+        padding: 50px;
+        text-align: left;
+    }
+    
+    .contact-container {
+        display: flex ;
+        padding: 50px;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+    }
+    .contact-info , .contact-us{
+        width: 100%;
+        text-align: left;
+    }
+    .column {
+        width: 100%;
+        display: block;
+    }
+}

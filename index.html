@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ! icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ! css styles link  -->
+    <link rel="stylesheet" href="./home/main.css" />
+    <!-- ! navigation style link -->
+    <link rel="stylesheet" href="./home/navigation_style.css" />
+    <!-- ! footer style link -->
+    <link rel="stylesheet" href="./footer_components/footer.css" />
+    <!-- ! category style link -->
+    <link rel="stylesheet" href="./category_components/category.css" />
+    <!-- ! product card style link -->
+    <link rel="stylesheet" href="./home_product_card/product_card.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <!-- ! start navigation -->
+    <nav class="nav">
+      <div id="logoDiv"><span id="logoSpn">Exclusive</span></div>
+      <div>
+        <ul id="navList">
+          <li><a href="#">Home</a></li>
+          <li><a href="./ContactPage/contact_page.html">Contact</a></li>
+          <li><a href="./AboutPage/about_us.html">About</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input
+          type="search"
+          name="searchInput"
+          id="searchInput"
+          placeholder="What are you looking for ?"
+        />
+        <i class="fa-solid fa-magnifying-glass" onclick="startSearch()"></i>
+      </div>
+      <a href="./favorite_page/favorite_page.html" class="favorite">
+        <i class="fa-regular fa-heart"></i>
+        <span class="counter" id="favoriteCountSpan"></span>
+      </a>
+      <a href="./cart/cart_page.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="counter" id="cartCountSpan"></span>
+      </a>
+    </nav>
+    <!-- ! end navigation -->
+
+    <!-- ! start slider section -->
+    <div class="sliderContainer">
+      <ul class="homeNavegation">
+        <li><a href="#hotOffers">Hot Offers</a></li>
+        <li><a href="#category">category</a></li>
+        <li><a href="#topRated">top rated</a></li>
+        <li><a href="#footer">footer</a></li>
+      </ul>
+      <div class="sliderDiv"></div>
+    </div>
+
+    <!-- ! end slider section -->
+
+    <!-- !start  hot offers section -->
+    <h1 id="hotOffers">Hot Offers</h1>
+    <section class="card-container"></section>
+    <!-- !end  hot offers section -->
+
+    <!-- ! start show more products button -->
+    <div class="showMoreBtn">
+      <button id="showMoreProducts" onclick="goToAllProducts()">
+        show more
+      </button>
+    </div>
+    <!-- ! end show more products button -->
+
+    <!-- ! start category section -->
+    <section class="category-container" id="category">
+      <div class="category">
+        <div class="category-head">
+          <h1>browse by category</h1>
+          <div class="btn">
+            <i
+              onclick="showPreviousCategories()"
+              class="fa-solid fa-arrow-left"
+            ></i>
+            <i
+              onclick="showNextCategories()"
+              class="fa-solid fa-arrow-right"
+            ></i>
+          </div>
+        </div>
+        <div class="category-list"></div>
+      </div>
+    </section>
+    <!-- ! end category section -->
+
+    <!-- !start  top rated section-->
+    <h1 id="topRated">top rated</h1>
+    <section class="card-container"></section>
+    <!-- !start  top rated section-->
+
+    <!-- ! start show more products button -->
+    <div class="showMoreBtn">
+      <button id="showMoreProducts" onclick="goToAllProducts()">
+        show more
+      </button>
+    </div>
+    <!-- ! end show more products button -->
+
+    <!-- !start offer -->
+    <div>
+      <div id="offer-slide-show"></div>
+    </div>
+    <!-- !end offer -->
+
+    <!-- ! start footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="exlusive">
+          <h3 class="list-header">Exlusive</h3>
+          <h5>subscribe</h5>
+          <label for="email">Get 10% off on first order</label>
+          <div class="email-container">
+            <input type="email" placeholder="Enter email" class="email-input" />
+            <button class="submit-button">&#x27A4;</button>
+          </div>
+        </div>
+        <div class="support">
+          <h3 class="list-header">support</h3>
+          <ul>
+            <li>
+              <a href="#"><p>eqypt, qena, ITI building, lab 9</p> </a>
+            </li>
+            <li><a href="#">team01@gmail.com</a></li>
+            <li><a href="#">+20-123-456-789</a></li>
+          </ul>
+        </div>
+
+        <div class="account">
+          <h3 class="list-header">account</h3>
+          <ul>
+            <li><a href="#">my account</a></li>
+            <li><a href="#">login / register</a></li>
+            <li><a href="#">cart</a></li>
+            <li><a href="#">favourites </a></li>
+            <li><a href="#">shop</a></li>
+          </ul>
+        </div>
+        <div class="quik-link">
+          <h3 class="list-header">quik link</h3>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">terms of use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">content</a></li>
+          </ul>
+        </div>
+        <div class="download-app">
+          <h3 class="list-header">download app</h3>
+          <p>Save 3$ with app new user only</p>
+          <img src="./footer_components/images/qrcode.png" alt="qr-code" />
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>copyright &copy; 2020 all rights reserved</p>
+      </div>
+    </footer>
+    <!-- ! end footer -->
+
+    <!-- ! main script link -->
+    <script src="./functions.js"></script>
+    <script src="./search/search.js"></script>
+    <script src="./home/navigation_bar.js"></script>
+    <script src="./category_components/category.js"></script>
+    <script src="./home/main.js"></script>
+  </body>
+</html>

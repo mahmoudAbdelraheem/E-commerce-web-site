@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create an Account</title>
+    <link rel="stylesheet" href="./signup_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-side">
+        <img src="../images/shop.png" alt="Shopping Image" />
+      </div>
+      <div class="form-side">
+        <h2>Create an account</h2>
+        <p>Enter your details below</p>
+        <form id="signup-form" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <p id="nameError"></p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <p id="emailError"></p>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <p id="show-password" class="show-password">show password</p>
+          <p id="passwordError"></p>
+        </form>
+        <button id="signup-button">Create Account</button>
+        <p>Already have an account? <a href="../login/login.html">Log in</a></p>
+      </div>
+    </div>
+
+    <script src="./signup.js"></script>
+  </body>
+</html>

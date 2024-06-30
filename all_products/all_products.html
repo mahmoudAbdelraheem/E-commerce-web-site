@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ! icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ! css styles link -->
+    <link rel="stylesheet" href="./all_products.css" />
+    <!-- ! navigation style link -->
+    <link rel="stylesheet" href="../home/navigation_style.css" />
+    <!-- ! footer style link -->
+    <link rel="stylesheet" href="../footer_components/footer.css" />
+    <!-- ! category style link -->
+    <link rel="stylesheet" href="../category_components/category.css" />
+    <!-- ! product card style link -->
+    <link rel="stylesheet" href="../home_product_card/product_card.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ! start navigation -->
+    <nav class="nav">
+      <div id="logoDiv"><span id="logoSpn">Exclusive</span></div>
+      <div>
+        <ul id="navList">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../ContactPage/contact_page.html">Contact</a></li>
+          <li><a href="../AboutPage/about_us.html">About</a></li>
+        </ul>
+      </div>
+     <div class="search">
+       <input
+        type="search"
+        name="searchInput"
+        id="searchInput"
+        placeholder="What are you looking for ?"
+      />
+      <i class="fa-solid fa-magnifying-glass" onclick="startSearch()"></i>
+     </div >
+      <a href="../favorite_page/favorite_page.html" class="favorite">
+        <i class="fa-regular fa-heart"></i>
+        <span class="counter" id="favoriteCountSpan"></span>
+      </a>
+      <a href="../cart/cart_page.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="counter" id="cartCountSpan"></span>
+      </a>
+    </nav>
+    <!-- ! end navigation -->
+
+    <!-- ! start category section -->
+    <section class="category-container" id="category">
+      <div class="category">
+        <div class="category-head">
+          <h1>browse by category</h1>
+          <div class="btn">
+            <i
+              onclick="showPreviousCategories()"
+              class="fa-solid fa-arrow-left"
+            ></i>
+            <i
+              onclick="showNextCategories()"
+              class="fa-solid fa-arrow-right"
+            ></i>
+          </div>
+        </div>
+        <div class="category-list"></div>
+      </div>
+    </section>
+    <!-- ! end category section -->
+
+    <section class="main">
+      <h1 class="title">All Products</h1>
+      <section class="card-container"></section>
+    </section>
+
+    <!-- !script links -->
+     <script src="../functions.js"></script>
+    <script src="../search/search.js"></script>
+    <script src="../home/navigation_bar.js"></script>
+    <script src="../category_components/category.js"></script>
+    <script src="./all_products.js"></script>
+  </body>
+</html>
